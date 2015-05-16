@@ -1,0 +1,66 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = ellipse, color="black"]; "p-plan:MultiStep" "p-plan:Activity" "p-plan:Step" "p-plan:Entity" "p-plan:Bundle" "prov:Bundle" "prov:Entity" "p-plan:Plan" "prov:Plan" "prov:Activity" "p-plan:Variable" ; /*classes style*/
+node [shape = rectangle, color="black"]; "p-plan:" "prov:" ; /*individuals style*/
+	"p-plan:Activity" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:Entity" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:isStepOfPlan" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"terms:description" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"p-plan:hasInputVar" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"prov:used" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:isDecomposedAsPlan" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"terms:modified" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"prov:Plan" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:correspondsToVariable" -> "owl:FunctionalProperty" [ label = "rdf:type" ];
+	"p-plan:correspondsToVariable" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:" -> "owl:NamedIndividual" [ label = "rdf:type" ];
+	"p-plan:" -> "owl:Ontology" [ label = "rdf:type" ];
+	"p-plan:" -> "owl:Thing" [ label = "rdf:type" ];
+	"prov:definition" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"prov:Bundle" -> "owl:Class" [ label = "rdf:type" ];
+	"terms:created" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"prov:wasDerivedFrom" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:isVariableOfPlan" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:isOutputVarOf" -> "owl:FunctionalProperty" [ label = "rdf:type" ];
+	"p-plan:isOutputVarOf" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:Bundle" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:Plan" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:Variable" -> "owl:Class" [ label = "rdf:type" ];
+	"terms:title" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"p-plan:MultiStep" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:isPrecededBy" -> "p-plan:" [ label = "rdfs:comment" ];
+	"p-plan:isPrecededBy" -> "owl:TransitiveProperty" [ label = "rdf:type" ];
+	"p-plan:isPrecededBy" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"prov:Entity" -> "owl:Class" [ label = "rdf:type" ];
+	"prov:wasGeneratedBy" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"prov:" -> "owl:NamedIndividual" [ label = "rdf:type" ];
+	"prov:" -> "owl:Thing" [ label = "rdf:type" ];
+	"prov:Activity" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:Step" -> "owl:Class" [ label = "rdf:type" ];
+	"p-plan:correspondsToStep" -> "owl:FunctionalProperty" [ label = "rdf:type" ];
+	"p-plan:correspondsToStep" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:hasOutputVar" -> "p-plan:isOutputVarOf" [ label = "owl:inverseOf" ];
+	"p-plan:hasOutputVar" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"vann:preferredNamespaceUri" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"p-plan:isInputVarOf" -> "p-plan:hasInputVar" [ label = "owl:inverseOf" ];
+	"p-plan:isInputVarOf" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"p-plan:isSubPlanOfPlan" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"p-plan:isSubPlanOfPlan" -> "owl:ObjectProperty" [ label = "rdf:type" ];
+	"vann:preferredNamespacePrefix" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"p-plan:Plan" -> "p-plan:Plan" [ label = "p-plan:isSubPlanOfPlan" ];
+	"prov:Entity" -> "prov:Entity" [ label = "prov:wasDerivedFrom" ];
+	"p-plan:Step" -> "p-plan:Plan" [ label = "p-plan:isStepOfPlan" ];
+	"p-plan:Variable" -> "p-plan:Plan" [ label = "p-plan:isVariableOfPlan" ];
+	"prov:Entity" -> "prov:Activity" [ label = "prov:wasGeneratedBy" ];
+	"p-plan:Step" -> "p-plan:Variable" [ label = "p-plan:hasInputVar" ];
+	"p-plan:Step" -> "p-plan:Step" [ label = "p-plan:isPrecededBy" ];
+	"p-plan:MultiStep" -> "p-plan:Plan" [ label = "p-plan:isDecomposedAsPlan" ];
+	"p-plan:Step" -> "p-plan:Variable" [ label = "p-plan:hasOutputVar" ];
+	"p-plan:Activity" -> "p-plan:Step" [ label = "p-plan:correspondsToStep" ];
+	"p-plan:Entity" -> "p-plan:Variable" [ label = "p-plan:correspondsToVariable" ];
+	"prov:Activity" -> "prov:Entity" [ label = "prov:used" ];
+	"p-plan:Variable" -> "p-plan:Step" [ label = "p-plan:isInputVarOf" ];
+	"p-plan:Variable" -> "p-plan:Step" [ label = "p-plan:isOutputVarOf" ];
+
+}
