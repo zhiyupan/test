@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <http://purl.org/net/p-plan> a prov:Entity;
-	 dc:title "The Test Ontology";
+	 dc:title "The This is a test on the config file";
 	 prov:wasAttributedTo <http://example.org/author1>;
 	 dc:creator <http://example.org/author1>;
 	 prov:wasAttributedTo <http://example.org/author2>;
