@@ -1,9 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:Hotel" "schema:Hostel" "base:Hostal" "cruzar:Alojamiento" "base:Alojamiento" "schema:BedAndBreakfast" "geonames:Feature" "base:Apartahotel" "schema:Motel" "schema:LodgingBusiness" "skos:Concept" "schema:Hotel" "base:Albergue" "-3f9a9e50:14db38b6e21:-7ffb" "-3f9a9e50:14db38b6e21:-7ffc" ; /*classes style*/
-	"base:Alojamiento" -> "-3f9a9e50:14db38b6e21:-7ffb" [ label = "rdfs:subClassOf" ];
-	"base:Alojamiento" -> "-3f9a9e50:14db38b6e21:-7ffc" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "base:Hotel" "schema:Hostel" "base:Hostal" "cruzar:Alojamiento" "base:Alojamiento" "schema:BedAndBreakfast" "geonames:Feature" "base:Apartahotel" "schema:Motel" "schema:LodgingBusiness" "schema:Hotel" "base:Albergue" ; /*classes style*/
 	"base:Alojamiento" -> "cruzar:Alojamiento" [ label = "rdfs:subClassOf" ];
 	"base:Alojamiento" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
 	"base:Alojamiento" -> "schema:LodgingBusiness" [ label = "rdfs:subClassOf" ];

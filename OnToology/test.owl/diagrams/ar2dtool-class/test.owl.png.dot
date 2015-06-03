@@ -1,8 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "p-plan:MultiStep" "p-plan:Activity" "p-plan:Step" "p-plan:Entity" "p-plan:Bundle" "prov:Bundle" "prov:Entity" "p-plan:Plan" "prov:Plan" "prov:Activity" "p-plan:Variable" ; /*classes style*/
-	"p-plan:isPrecededBy" -> "p-plan:" [ label = "rdfs:comment" ];
+node [shape = rectangle, color="orange"]; "p-plan:MultiStep" "p-plan:Activity" "p-plan:Step" "p-plan:Entity" "prov:Entity" "p-plan:Plan" "prov:Activity" "p-plan:Variable" ; /*classes style*/
 	"p-plan:isSubPlanOfPlan" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"p-plan:Plan" -> "p-plan:Plan" [ label = "p-plan:isSubPlanOfPlan" ];
 	"prov:Entity" -> "prov:Entity" [ label = "prov:wasDerivedFrom" ];
