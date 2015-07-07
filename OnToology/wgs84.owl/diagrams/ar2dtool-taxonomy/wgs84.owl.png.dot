@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wgs84_pos:SpatialThing" "wgs84_pos:Point" ; /*classes style*/
+	"wgs84_pos:Point" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+
+}
