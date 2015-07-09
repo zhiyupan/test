@@ -16,7 +16,7 @@
 #Contact: colin@maudry.com
 
 
-#The following data.gouv.fr properties are mapped with Dublin Core or DCAT properties during the conversion:
+#The following data.gouv.fr properties are mapped with Dublin Core or DCAT properties during the conversion:test
 
 # For datasets and resources
 # id			> dct:identifier
