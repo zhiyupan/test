@@ -94,9 +94,7 @@
 				$("#toolList").html(html);
 			}
 			
-			/**
-			* Function that loads a research object into a row in the html variable.
-			**/
+			
 			function loadRow(tool){
 				toolsHtml+='<tr>';
 				toolsHtml+='<td><a href=\"'+tool.id+'\">'+tool.label+'</a></td>';
@@ -137,6 +135,11 @@
             <div class="navbar-header">
               <a class="navbar-brand">Distributed client</a>
             </div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="search.html">Search</a></li>
+				</ul>
+			</div>
         </div>
       </nav>
 	  
