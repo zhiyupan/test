@@ -1,0 +1,127 @@
+{
+  "@context" : {
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "MultiStep" : {
+      "@id" : "http://purl.org/net/p-plan#MultiStep"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Bundle" : {
+      "@id" : "http://www.w3.org/ns/prov#Bundle"
+    },
+    "Activity" : {
+      "@id" : "http://purl.org/net/p-plan#Activity"
+    },
+    "used" : {
+      "@id" : "http://www.w3.org/ns/prov#used",
+      "@type" : "@id"
+    },
+    "Step" : {
+      "@id" : "http://purl.org/net/p-plan#Step"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "hasOutputVar" : {
+      "@id" : "http://purl.org/net/p-plan#hasOutputVar",
+      "@type" : "@id"
+    },
+    "isStepOfPlan" : {
+      "@id" : "http://purl.org/net/p-plan#isStepOfPlan",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type" : "@id"
+    },
+    "isPrecededBy" : {
+      "@id" : "http://purl.org/net/p-plan#isPrecededBy",
+      "@type" : "@id"
+    },
+    "correspondsToStep" : {
+      "@id" : "http://purl.org/net/p-plan#correspondsToStep",
+      "@type" : "@id"
+    },
+    "isSubPlanOfPlan" : {
+      "@id" : "http://purl.org/net/p-plan#isSubPlanOfPlan",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Plan" : {
+      "@id" : "http://purl.org/net/p-plan#Plan"
+    },
+    "correspondsToVariable" : {
+      "@id" : "http://purl.org/net/p-plan#correspondsToVariable",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/ns/prov#definition"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "isInputVarOf" : {
+      "@id" : "http://purl.org/net/p-plan#isInputVarOf",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "Variable" : {
+      "@id" : "http://purl.org/net/p-plan#Variable"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "isOutputVarOf" : {
+      "@id" : "http://purl.org/net/p-plan#isOutputVarOf",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isVariableOfPlan" : {
+      "@id" : "http://purl.org/net/p-plan#isVariableOfPlan",
+      "@type" : "@id"
+    },
+    "isDecomposedAsPlan" : {
+      "@id" : "http://purl.org/net/p-plan#isDecomposedAsPlan",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasInputVar" : {
+      "@id" : "http://purl.org/net/p-plan#hasInputVar",
+      "@type" : "@id"
+    }
+  }
+}
