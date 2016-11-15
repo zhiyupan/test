@@ -91,7 +91,7 @@
 <http://purl.org/net/p-plan#Plan> <http://www.w3.org/2000/01/rdf-schema#label> "Plan"@en .
 <http://purl.org/net/p-plan#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/net/p-plan#Variable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/net/p-plan#> .
-<http://purl.org/net/p-plan#Variable> <http://www.w3.org/ns/prov#definition> "A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step)"@en .
+<http://purl.org/net/p-plan#Variable> <http://www.w3.org/ns/prov#definition> "A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step). Ontoology test"@en .
 <http://purl.org/net/p-plan#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable"@en .
 <http://purl.org/net/p-plan#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
