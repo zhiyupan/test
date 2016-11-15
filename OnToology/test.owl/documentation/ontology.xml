@@ -112,7 +112,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/net/p-plan#Variable">
     <rdfs:isDefinedBy rdf:resource="http://purl.org/net/p-plan#"/>
-    <prov:definition xml:lang="en">A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step)</prov:definition>
+    <prov:definition xml:lang="en">A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step). Ontoology test</prov:definition>
     <rdfs:label xml:lang="en">Variable</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>

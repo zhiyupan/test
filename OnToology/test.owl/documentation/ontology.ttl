@@ -109,7 +109,7 @@ terms:modified
       a       owl:Class ;
       rdfs:isDefinedBy : ;
       rdfs:label "Variable"@en ;
-      prov:definition "A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step)"@en .
+      prov:definition "A p-plan:Variable represents a description of the input of the planned Activity (p-plan:Step). Ontoology test"@en .
 
 :MultiStep
       a       owl:Class ;
