@@ -73,13 +73,13 @@ geonames:Feature
       rdfs:subClassOf cruzar:Alojamiento , schema:LodgingBusiness , geonames:Feature ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:hasValue geonames:S ;
-                owl:onProperty geonames:featureClass
+                owl:hasValue <http://geonames.org/ontology#S.HTL> ;
+                owl:onProperty geonames:featureCode
               ] ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
-                owl:hasValue <http://geonames.org/ontology#S.HTL> ;
-                owl:onProperty geonames:featureCode
+                owl:hasValue geonames:S ;
+                owl:onProperty geonames:featureClass
               ] ;
       dcterms:issued "2014-09-15"^^xsd:dateTime .
 
@@ -101,6 +101,8 @@ skos:Concept
 rdfs:isDefinedBy
       a       owl:AnnotationProperty .
 
+[]    rdfs:label "HTML" .
+
 schema:LodgingBusiness
       a       owl:Class .
 
@@ -115,6 +117,8 @@ schema:BedAndBreakfast
       a       owl:Class ;
       rdfs:subClassOf schema:LodgingBusiness .
 
+[]    rdfs:label "RDF" .
+
 :categoria
       a       owl:ObjectProperty ;
       rdfs:comment "Categoría de un alojamiento. Normalmente se debería encontrar recogido en un SKOS Concept Scheme sobre categorías (para representar, por ejemplo, las estrellas o llaves de un hotel o apartamento). "@es ;
@@ -128,6 +132,9 @@ geonames:featureClass
       a       owl:ObjectProperty ;
       rdfs:subPropertyOf dcterms:type .
 
+geonames:S
+      a       owl:NamedIndividual , skos:Concept .
+
 :Hotel
       a       owl:Class ;
       rdfs:comment "Hotel"@es ;
@@ -135,9 +142,6 @@ geonames:featureClass
       rdfs:label "Hotel"@es ;
       rdfs:subClassOf schema:Hotel , :Alojamiento ;
       dcterms:issued "2015-03-06"^^xsd:dateTime .
-
-geonames:S
-      a       owl:NamedIndividual , skos:Concept .
 
 schema:Hostel
       a       owl:Class ;
@@ -154,12 +158,8 @@ cruzar:Alojamiento
       rdfs:subClassOf schema:LodgingBusiness , :Alojamiento ;
       dcterms:issued "2015-03-06"^^xsd:dateTime .
 
-[]    rdfs:label "RDF" .
-
 dcterms:issued
       a       owl:AnnotationProperty .
-
-[]    rdfs:label "HTML" .
 
 :numCamas
       a       owl:DatatypeProperty ;
