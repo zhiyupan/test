@@ -1,0 +1,17 @@
+{
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "PanelPosition_IfcWindowPanelProperties" : {
+      "@id" : "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1#PanelPosition_IfcWindowPanelProperties",
+      "@type" : "@id"
+    },
+    "IfcWindowPanelProperties" : {
+      "@id" : "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1#IfcWindowPanelProperties"
+    },
+    "IfcWindowPanelPositionEnum" : {
+      "@id" : "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1#IfcWindowPanelPositionEnum"
+    }
+  }
+}
