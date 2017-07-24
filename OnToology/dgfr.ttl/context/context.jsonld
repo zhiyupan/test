@@ -1,0 +1,165 @@
+{
+  "@context" : {
+    "sumPopularityPoints" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#sumPopularityPoints",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "distributions" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#distributions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "followers" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#followers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "url" : {
+      "@id" : "http://schema.org/url"
+    },
+    "pointsValue" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#pointsValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "dataset" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#dataset",
+      "@type" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "visits" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#visits",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "checksumType" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#checksumType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "members" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#members",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hits" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#hits",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "private" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#private",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "popularityPoints" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#popularityPoints",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "slug" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#slug",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "published" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#published",
+      "@type" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "Reuse" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#Reuse"
+    },
+    "views" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#views",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "uniqueVisitors" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#uniqueVisitors",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasMadeReuses" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#hasMadeReuses",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "localUrl" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#localUrl"
+    },
+    "featured" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#featured",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "reuses" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#reuses",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "type" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#type",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "datasets" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#datasets",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "checksumValue" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#checksumValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "downloads" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#downloads",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "issues" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#issues",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Document" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Document"
+    },
+    "publicService" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#publicService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "format" : {
+      "@id" : "http://colin.maudry.com/ontologies/dgfr#format",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
