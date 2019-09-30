@@ -1,0 +1,445 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://linked.earth/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Proxy Archive Ontology"
+    },
+    "iri" : "http://linked.earth/ontology#",
+    "version" : "0.0.1",
+    "author" : [ "http://www.cefns.nau.edu/~npm4/", "http://orcid.org/0000-0001-5920-4751", "http://earth.usc.edu/~khider/" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-nc-sa/2.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://earth.usc.edu/~khider/",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://orcid.org/0000-0001-5920-4751",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "http://www.cefns.nau.edu/~npm4/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://www.isi.edu/~gil/",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid-nodeid-node1dlvrjeatx1",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "le",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://linked.earth/ontology#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Proxy Archive Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#MolluskShells",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolluskShells",
+      "en" : "Mollusk shells"
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Document",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "TEST",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "http://source1.com",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document"
+    },
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Wood",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wood",
+      "en" : "Wood"
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Peat",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Peat",
+      "en" : "Peat "
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#ProxyArchive",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.sciencedirect.com/science/article/pii/S0277379113002011",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProxyArchive",
+      "en" : "Proxy archive"
+    },
+    "subClasses" : [ "6", "8", "0", "11", "13", "15", "17", "19", "20", "21", "22", "23" ],
+    "comment" : {
+      "en" : "The medium in which the response of a sensor to environmental forcing is recorded. Sensu Evans et al. (2013).\n\nExamples of archives include: marine sediments, corals, wood, lake sediments, speleothems, glacier ice, etc."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://linked.earth/ontology#Sclerosponge",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Sclerosponge",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sclerosponge",
+      "en" : "Sclerosponge"
+    },
+    "id" : "17",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Rock",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rock",
+      "en" : "Rock"
+    },
+    "id" : "19",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://linked.earth/ontology#Coral",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Coral",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "http://example.com",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Coralinando",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Coral",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Coral"
+    },
+    "attributes" : [ "deprecated" ],
+    "id" : "20",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#GlacierIce",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GlacierIce",
+      "en" : "Glacier ice"
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#MarineSediment",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://wiki.linked.earth/Marine_Sediment",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MarineSediment",
+      "en" : "Marine Sediment"
+    },
+    "comment" : {
+      "en" : "Marine sediments are a type of proxy archives that provide long, continuous records of past ocean variability. The timescales associated with this proxy are usually in the order of several tens to millions of years. The resolution of the sedimentary archive varies from annual to multi-century. Paleoceanographic data are derived from many sensors found in deep-sea sediments including trace metal and isotopic composition of foraminifera, alkenones, and TEX86. "
+    },
+    "id" : "21",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Speleothem",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Speleothem",
+      "en" : "Speleothem"
+    },
+    "id" : "15",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#LakeSediment",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LakeSediment",
+      "en" : "Lake Sediment"
+    },
+    "id" : "23",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://linked.earth/ontology#Hybrid",
+    "baseIri" : "http://linked.earth/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hybrid",
+      "en" : "Hybrid"
+    },
+    "id" : "22",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://linked.earth/ontology#name",
+    "baseIri" : "http://linked.earth/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "2"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "1",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  } ]
+}
