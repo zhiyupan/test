@@ -1,0 +1,34 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#OP_Test"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#Class_B"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#Class_A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#Class_B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is class B"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#OP_Test",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This is a property"
+  } ]
+} ]
