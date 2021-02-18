@@ -27,15 +27,15 @@
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:AnnotationProperty ;
                                               rdfs:comment """The WGS84 altitude of a SpatialThing (decimal meters 
-above the local reference ellipsoid)."""^^xsd:string ;
-                                              rdfs:label "altitude"^^xsd:string ;
+above the local reference ellipsoid).""" ;
+                                              rdfs:label "altitude" ;
                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:AnnotationProperty ;
-                                              rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)."^^xsd:string ;
-                                              rdfs:label "latitude"^^xsd:string ;
+                                              rdfs:comment "The WGS84 latitude of a SpatialThing (decimal degrees)." ;
+                                              rdfs:label "latitude" ;
                                               rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
 
@@ -47,8 +47,8 @@ above the local reference ellipsoid)."""^^xsd:string ;
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:AnnotationProperty ;
-                                               rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)."^^xsd:string ;
-                                               rdfs:label "longitude"^^xsd:string ;
+                                               rdfs:comment "The WGS84 longitude of a SpatialThing (decimal degrees)." ;
+                                               rdfs:label "longitude" ;
                                                rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
 
@@ -78,29 +78,29 @@ spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
   lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
 
 sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).
-  """^^xsd:string ,
+  """ ,
                                                              """A point, typically described using a coordinate system relative to Earth, such as WGS84.
-  """^^xsd:string ;
-                                                rdfs:label "point"^^xsd:string .
+  """ ;
+                                                rdfs:label "point" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class ;
                                                        rdfs:comment """Anything with spatial extent, i.e. size, shape, or position.
  e.g. people, places, bowling balls, as well as abstract areas like cubes.
-"""^^xsd:string ;
-                                                       rdfs:label "SpatialThing"^^xsd:string .
+""" ;
+                                                       rdfs:label "SpatialThing" .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://purl.org/dc/elements/1.1/date> "$Date: 2009/04/20 15:00:30 $"^^xsd:string ;
+<http://www.w3.org/2003/01/geo/wgs84_pos#> <http://purl.org/dc/elements/1.1/date> "$Date: 2009/04/20 15:00:30 $" ;
                                            <http://purl.org/dc/elements/1.1/description> """A vocabulary for representing latitude, longitude and 
  altitude information in the WGS84 geodetic reference datum. 
- Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details."""^^xsd:string ;
-                                           <http://purl.org/dc/elements/1.1/title> "WGS84 Geo Positioning: an RDF vocabulary"^^xsd:string ;
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
+                                           <http://purl.org/dc/elements/1.1/title> "WGS84 Geo Positioning: an RDF vocabulary" ;
                                            rdfs:comment """
 Recent changes to this namespace:
 $Log: wgs84_pos.rdf,v $
@@ -184,12 +184,12 @@ revision 1.1
 date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
 basic geo vocab
 
-"""^^xsd:string ;
-                                           rdfs:label "geo"^^xsd:string .
+""" ;
+                                           rdfs:label "geo" .
 
 
-<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> rdfs:comment "A comma-separated representation of a latitude, longitude coordinate."^^xsd:string ;
-                                                   rdfs:label "lat/long"^^xsd:string .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> rdfs:comment "A comma-separated representation of a latitude, longitude coordinate." ;
+                                                   rdfs:label "lat/long" .
 
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> rdfs:comment """The relation between something and the point, 
@@ -199,8 +199,8 @@ basic geo vocab
  its location as a arc (a sequence of points).
  Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
  an accuracy appropriate for the size of the object and uses such as mapping .
- """^^xsd:string ;
-                                                   rdfs:label "location"^^xsd:string .
+ """ ;
+                                                   rdfs:label "location" .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

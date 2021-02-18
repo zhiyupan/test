@@ -1,0 +1,17 @@
+{
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "OP_Test" : {
+      "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#OP_Test",
+      "@type" : "@id"
+    },
+    "Class_B" : {
+      "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#Class_B"
+    },
+    "Class_A" : {
+      "@id" : "http://www.semanticweb.org/clbuhr/ontologies/2020/10/untitled-ontology-76#Class_A"
+    }
+  }
+}

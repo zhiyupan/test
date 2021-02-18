@@ -1,0 +1,91 @@
+{
+  "@context" : {
+    "MarineSediment" : {
+      "@id" : "http://linked.earth/ontology#MarineSediment"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Wood" : {
+      "@id" : "http://linked.earth/ontology#Wood"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "GlacierIce" : {
+      "@id" : "http://linked.earth/ontology#GlacierIce"
+    },
+    "Hybrid" : {
+      "@id" : "http://linked.earth/ontology#Hybrid"
+    },
+    "Coral" : {
+      "@id" : "http://linked.earth/ontology#Coral"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ProxyArchive" : {
+      "@id" : "http://linked.earth/ontology#ProxyArchive"
+    },
+    "MolluskShells" : {
+      "@id" : "http://linked.earth/ontology#MolluskShells"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://linked.earth/ontology#name"
+    },
+    "Peat" : {
+      "@id" : "http://linked.earth/ontology#Peat"
+    },
+    "LakeSediment" : {
+      "@id" : "http://linked.earth/ontology#LakeSediment"
+    },
+    "Rock" : {
+      "@id" : "http://linked.earth/ontology#Rock"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Speleothem" : {
+      "@id" : "http://linked.earth/ontology#Speleothem"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Sclerosponge" : {
+      "@id" : "http://linked.earth/ontology#Sclerosponge"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Document" : {
+      "@id" : "http://linked.earth/ontology#Document"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://colin.maudry.com/ontologies/dgfr#"
      xml:base="http://colin.maudry.com/ontologies/dgfr"
-     xmlns:dgfr="http://colin.maudry.com/ontologies/dgfr#"
-     xmlns:schema="http://schema.org/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dgfr="http://colin.maudry.com/ontologies/dgfr#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://colin.maudry.com/ontologies/dgfr#">
         <ns:license rdf:resource="http://unlicense.org"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-12</terms:created>
@@ -19,8 +19,8 @@
         <terms:description xml:lang="fr">L&apos;ontologie DGFR définit les termes nécessaires à la description des jeux de données publiés ou référencés sur data.gouv.fr, lorsque DCAT et Dublin Core ne suffisent pas.</terms:description>
         <terms:description xml:lang="en">The DGFR ontology defines the terms required to describe the datasets published or referenced on data.gouv.fr, when DCAT and Dublin Core are not enough.</terms:description>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-12</terms:modified>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data.gouv.fr (DGFR) ontology</terms:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dgfr</vann:preferredNamespacePrefix>
+        <terms:title>Data.gouv.fr (DGFR) ontology</terms:title>
+        <vann:preferredNamespacePrefix>dgfr</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
         <rdfs:seeAlso rdf:resource="http://data.gouv.fr"/>
     </owl:Ontology>
@@ -156,7 +156,7 @@
         <rdfs:comment xml:lang="fr">L&apos;URL à laquelle une réutilisation est référencée et décrite sur la plateforme.</rdfs:comment>
         <rdfs:comment xml:lang="en">The URL where a reuse is registered and described on the platform.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote URL</rdfs:label>
+        <rdfs:label>Remote URL</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://schema.org/url"/>
         <rdfs:domain rdf:resource="http://colin.maudry.com/ontologies/dgfr#Reuse"/>
     </owl:AnnotationProperty>
@@ -278,6 +278,62 @@
         <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -590,7 +646,7 @@
         <rdfs:comment xml:lang="en">A creative work derived from the data of one or more dataset</rdfs:comment>
         <rdfs:comment xml:lang="fr">Une réalisation créée à partir des données d&apos;un ou plusieurs jeux de données</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reuse</rdfs:label>
+        <rdfs:label>Reuse</rdfs:label>
     </owl:Class>
     
 
@@ -622,155 +678,155 @@
         <rdfs:comment xml:lang="fr">Le type de somme de contrôle de la ressource.</rdfs:comment>
         <rdfs:comment xml:lang="en">The type of checksum of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checksum type</rdfs:label>
+        <rdfs:label>Checksum type</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#checksumValue">
         <rdfs:comment xml:lang="fr">La somme de contrôle de la ressource.</rdfs:comment>
         <rdfs:comment xml:lang="en">The checksum of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checksum value</rdfs:label>
+        <rdfs:label>Checksum value</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#dataset">
         <rdfs:comment xml:lang="en">A dataset in which this distribution is included.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Un jeu de données dans lequel cette ressource est incluse</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dataset</rdfs:label>
+        <rdfs:label>Dataset</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#datasets">
         <rdfs:comment xml:lang="fr">Le nombre de jeux de données utilisés pour réaliser la réutilisation</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of datasets published </rdfs:comment>
         <rdfs:comment xml:lang="en">The number of datasets used to make the reuse</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datasets</rdfs:label>
+        <rdfs:label>Datasets</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#distributions">
         <rdfs:comment xml:lang="fr">Le nombre de distributions cotenues dans le jeu de données.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of distributions that this dataset contains.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distributions</rdfs:label>
+        <rdfs:label>Distributions</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#downloads">
         <rdfs:comment xml:lang="fr">Le nombre de fois que la ressource a été téléchargée.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of times the resource was downloaded.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downloads</rdfs:label>
+        <rdfs:label>Downloads</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#featured">
         <rdfs:comment xml:lang="en">Defines whether the dataset is shown on the portal front page or not.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Détermine si le jeu de données est visible sur la page d&apos;accueil du portail, ou non.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Featured</rdfs:label>
+        <rdfs:label>Featured</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#followers">
         <rdfs:comment xml:lang="fr">Le nombre d&apos;utilisateurs qui se sont abonnés pour être informés lorsque le jeu de données est mis à jour.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of users who subscribed to be informed when the dataset is updated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Followers</rdfs:label>
+        <rdfs:label>Followers</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#format">
         <rdfs:comment xml:lang="en">Defines the format of a resource/dcat:Distribution. Used until proper resources of type dct:MediaTypeOrExtent are found.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Détermine le format d&apos;une ressource/dcat:Distribution. Propriété utilisée jusqu&apos;à ce que l&apos;on trouve des ressources de type dct:MediaTypeOrExtent.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Format</rdfs:label>
+        <rdfs:label>Format</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#hasMadeReuses">
         <rdfs:comment xml:lang="fr">Le nombre de réutilisations produites et publiées par cette organisation</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of reuses produced and published by this organization</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has made reuses</rdfs:label>
+        <rdfs:label>Has made reuses</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#hits">
         <rdfs:comment xml:lang="fr">Le nombre de fois que la page du jeu de données a été vue. Mais différent des views.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of times the page of the dataset bas been viewed. But different from views.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hits</rdfs:label>
+        <rdfs:label>Hits</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#issues">
         <rdfs:comment xml:lang="fr">Le nombre d&apos;anomalies qui ont été signalées pour le jeu de données (données erronées ou manquantes).</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of issues that have been reported about the dataset (wrong or missing data).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Issues</rdfs:label>
+        <rdfs:label>Issues</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#members">
         <rdfs:comment xml:lang="fr">Le nombre de personne qui sont membres de cette organisation</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of people that are members of this organization</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Members</rdfs:label>
+        <rdfs:label>Members</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#pointsValue">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The value in points that each unit is worth</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Points value</rdfs:label>
+        <rdfs:comment>The value in points that each unit is worth</rdfs:comment>
+        <rdfs:label>Points value</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#popularityPoints">
         <rdfs:comment xml:lang="en">For a given object, the number of points related to popularity (downloads, followers)</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Popularity points</rdfs:label>
+        <rdfs:label>Popularity points</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#private">
         <rdfs:comment xml:lang="en">Defines whether the dataset is private (not public) or not.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Détermine si le jeu de données est privé (non public) ou non.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</rdfs:label>
+        <rdfs:label>Private</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#publicService">
         <rdfs:comment xml:lang="en">Defines whether the organization is entrusted a mission of public service.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Détermine si l&apos;organisation est chargée d&apos;une mission de service publique, ou non.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public service</rdfs:label>
+        <rdfs:label>Public service</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#published">
         <rdfs:comment xml:lang="en">A resource that was published by the agent (person or organization).</rdfs:comment>
         <rdfs:comment xml:lang="fr">Une entité publiée par un agent (personne ou organisation)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published</rdfs:label>
+        <rdfs:label>Published</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#reuses">
         <rdfs:comment xml:lang="fr">Le nombre de réutilisations qui ont été créées à partir des données du jeu de données et publiés sur la même page. Pour une organisation, le nombre de réutilisations créées à partir de ses jeux de données.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of reuses that have been created from the data of the dataset and published on the same page. For an organization, the number of reuses created using its datasets.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reuses</rdfs:label>
+        <rdfs:label>Reuses</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#slug">
         <rdfs:comment xml:lang="en">A URL-friendly version of the title.</rdfs:comment>
         <rdfs:comment xml:lang="fr">Une version du titre simplifiée pour pouvoir être inséré dans une URL.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slug</rdfs:label>
+        <rdfs:label>Slug</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#sumPopularityPoints">
         <rdfs:comment xml:lang="en">For a given object, the sum of the points calculated at its level plus the points calculated at the level of dependant objects. For instance, a datasets holds the sum of points at its level and at the level of the related distributions.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sum of popularity points</rdfs:label>
+        <rdfs:label>Sum of popularity points</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#type">
         <rdfs:comment xml:lang="fr">Le type de ressource (fichier, fichier distant, API, etc.)</rdfs:comment>
         <rdfs:comment xml:lang="en">The type of resource (file, remote file, API, etc.)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type</rdfs:label>
+        <rdfs:label>Type</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#uniqueVisitors">
         <rdfs:comment xml:lang="fr">Le nombre de visiteurs uniques qui se sont rendus sur la page du jeu de données.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of unique visitors who viewed the page of the dataset.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique visitors</rdfs:label>
+        <rdfs:label>Unique visitors</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#views">
         <rdfs:comment xml:lang="fr">Le nombre de fois que la page du jeu de données a été vue.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of times the page of the dataset bas been viewed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Views</rdfs:label>
+        <rdfs:label>Views</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry.com/ontologies/dgfr#visits">
         <rdfs:comment xml:lang="fr">Le nombre de fois que la page du jeu de données a été visitée.</rdfs:comment>
         <rdfs:comment xml:lang="en">The number of times the page of the dataset bas been visited.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://colin.maudry.com/ontologies/dgfr#"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visits</rdfs:label>
+        <rdfs:label>Visits</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://colin.maudry/rdf/colin-maudry#me">
         <foaf:mbox rdf:resource="mailto:colin@maudry.com"/>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colin Maudry</foaf:name>
+        <foaf:name>Colin Maudry</foaf:name>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 
