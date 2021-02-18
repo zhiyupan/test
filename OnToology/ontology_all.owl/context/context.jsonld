@@ -1,0 +1,1138 @@
+{
+  "@context" : {
+    "doesNotHaveFirstDegreeRelativeWithDisorder" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveFirstDegreeRelativeWithDisorder",
+      "@type" : "@id"
+    },
+    "University" : {
+      "@id" : "http://vivoweb.org/ontology/core#University"
+    },
+    "ImageAcquisitionProtocol" : {
+      "@id" : "https://w3id.org/enigma#ImageAcquisitionProtocol"
+    },
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial"
+    },
+    "Consortium" : {
+      "@id" : "http://vivoweb.org/ontology/core#Consortium"
+    },
+    "InformationObtainmentMethod" : {
+      "@id" : "https://w3id.org/enigma#InformationObtainmentMethod"
+    },
+    "Address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#Address"
+    },
+    "isFamilyBased" : {
+      "@id" : "https://w3id.org/enigma#isFamilyBased",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasTitle" : {
+      "@id" : "https://w3id.org/enigma#hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEmail" : {
+      "@id" : "https://w3id.org/enigma#hasEmail",
+      "@type" : "@id"
+    },
+    "hasInformationMethod" : {
+      "@id" : "https://w3id.org/enigma#hasInformationMethod",
+      "@type" : "@id"
+    },
+    "hasSequence" : {
+      "@id" : "https://w3id.org/enigma#hasSequence",
+      "@type" : "@id"
+    },
+    "withMaxDurationOfDisorder" : {
+      "@id" : "https://w3id.org/enigma#withMaxDurationOfDisorder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://w3id.org/enigma#hasManufacturer",
+      "@type" : "@id"
+    },
+    "hasControlGroup" : {
+      "@id" : "https://w3id.org/enigma#hasControlGroup",
+      "@type" : "@id"
+    },
+    "ConflictOfInterest" : {
+      "@id" : "https://w3id.org/enigma#ConflictOfInterest"
+    },
+    "hasDisorder" : {
+      "@id" : "https://w3id.org/enigma#hasDisorder",
+      "@type" : "@id"
+    },
+    "hasMinAge" : {
+      "@id" : "https://w3id.org/enigma#hasMinAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "DataType" : {
+      "@id" : "https://w3id.org/enigma#DataType"
+    },
+    "hasNumberOfCisFemale" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfCisFemale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "hasPsychiatricComorbidity" : {
+      "@id" : "https://w3id.org/enigma#hasPsychiatricComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasMedicalRatingDetails" : {
+      "@id" : "https://w3id.org/enigma#hasMedicalRatingDetails",
+      "@type" : "@id"
+    },
+    "hasBrainScanDataType" : {
+      "@id" : "https://w3id.org/enigma#hasBrainScanDataType",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "https://w3id.org/enigma#vann:example"
+    },
+    "Dataset" : {
+      "@id" : "https://w3id.org/enigma#Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "HamiltonDepressionRatingScale" : {
+      "@id" : "https://w3id.org/enigma#HamiltonDepressionRatingScale"
+    },
+    "hasApprovedProposalForm" : {
+      "@id" : "https://w3id.org/enigma#hasApprovedProposalForm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Country" : {
+      "@id" : "https://w3id.org/enigma#Country"
+    },
+    "hasMembersWithRecentIssue" : {
+      "@id" : "https://w3id.org/enigma#hasMembersWithRecentIssue",
+      "@type" : "@id"
+    },
+    "includesFemale" : {
+      "@id" : "https://w3id.org/enigma#includesFemale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Organization" : {
+      "@id" : "https://w3id.org/enigma#Organization"
+    },
+    "hasMiddleInitial" : {
+      "@id" : "https://w3id.org/enigma#hasMiddleInitial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfMale" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfMale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ScannerSoftware" : {
+      "@id" : "https://w3id.org/enigma#ScannerSoftware"
+    },
+    "encodingFormat" : {
+      "@id" : "http://schema.org/encodingFormat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasCondition" : {
+      "@id" : "https://w3id.org/enigma#hasCondition",
+      "@type" : "@id"
+    },
+    "SubstanceAbuse" : {
+      "@id" : "https://w3id.org/enigma#SubstanceAbuse"
+    },
+    "SpecificTreatmentInfo" : {
+      "@id" : "https://w3id.org/enigma#SpecificTreatmentInfo"
+    },
+    "hasAgeGroup" : {
+      "@id" : "https://w3id.org/enigma#hasAgeGroup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMaxAge" : {
+      "@id" : "https://w3id.org/enigma#hasMaxAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasPublication" : {
+      "@id" : "https://w3id.org/enigma#hasPublication",
+      "@type" : "@id"
+    },
+    "CardiovascularDisorder" : {
+      "@id" : "https://w3id.org/enigma#CardiovascularDisorder"
+    },
+    "hasTI" : {
+      "@id" : "https://w3id.org/enigma#hasTI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ClinicalGlobalImpressionsScale" : {
+      "@id" : "https://w3id.org/enigma#ClinicalGlobalImpressionsScale"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/enigma#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "distribution" : {
+      "@id" : "http://schema.org/distribution",
+      "@type" : "@id"
+    },
+    "hasPercentBloodSalivaCollection" : {
+      "@id" : "https://w3id.org/enigma#hasPercentBloodSalivaCollection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasNEX" : {
+      "@id" : "https://w3id.org/enigma#hasNEX",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Institute" : {
+      "@id" : "http://vivoweb.org/ontology/core#Institute"
+    },
+    "isPartOfOrganization" : {
+      "@id" : "https://w3id.org/enigma#isPartOfOrganization",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "https://w3id.org/enigma#hasVersion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfCisMale" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfCisMale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "doesNotHaveDisorder" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveDisorder",
+      "@type" : "@id"
+    },
+    "excludesLeftHands" : {
+      "@id" : "https://w3id.org/enigma#excludesLeftHands",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MedicalRating" : {
+      "@id" : "https://w3id.org/enigma#MedicalRating"
+    },
+    "Department" : {
+      "@id" : "http://vivoweb.org/ontology/core#Department"
+    },
+    "hasProjectCohort" : {
+      "@id" : "https://w3id.org/enigma#hasProjectCohort",
+      "@type" : "@id"
+    },
+    "hasDataCollectionPeriodStart" : {
+      "@id" : "https://w3id.org/enigma#hasDataCollectionPeriodStart",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "hasNumberOfrsfMRI" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfrsfMRI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasPrimaryAddress" : {
+      "@id" : "https://w3id.org/enigma#hasPrimaryAddress",
+      "@type" : "@id"
+    },
+    "doesNotHaveCondition" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveCondition",
+      "@type" : "@id"
+    },
+    "hasAddress" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+      "@type" : "@id"
+    },
+    "hasPercentTranscriptomics" : {
+      "@id" : "https://w3id.org/enigma#hasPercentTranscriptomics",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Manufacturer" : {
+      "@id" : "https://w3id.org/enigma#Manufacturer"
+    },
+    "hasNumberOfASL" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfASL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "MRISequence" : {
+      "@id" : "https://w3id.org/enigma#MRISequence"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "EndocrineDisorder" : {
+      "@id" : "https://w3id.org/enigma#EndocrineDisorder"
+    },
+    "author" : {
+      "@id" : "https://w3id.org/enigma#author",
+      "@type" : "@id"
+    },
+    "hasBriefDescription" : {
+      "@id" : "https://w3id.org/enigma#hasBriefDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isClinicallyStable" : {
+      "@id" : "https://w3id.org/enigma#isClinicallyStable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasEndDate" : {
+      "@id" : "https://w3id.org/enigma#hasEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "hasPercentGeneExpression" : {
+      "@id" : "https://w3id.org/enigma#hasPercentGeneExpression",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasScanTime" : {
+      "@id" : "https://w3id.org/enigma#hasScanTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasCohortStatus" : {
+      "@id" : "https://w3id.org/enigma#hasCohortStatus"
+    },
+    "doesNotHaveIntellectualDisability" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveIntellectualDisability",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox",
+      "@type" : "@id"
+    },
+    "hasMemorandumOfUnderstanding" : {
+      "@id" : "https://w3id.org/enigma#hasMemorandumOfUnderstanding",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "doesNotHaveNeurologicalComorbidity" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveNeurologicalComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "usedBodyCoil" : {
+      "@id" : "https://w3id.org/enigma#usedBodyCoil",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasAgeStandardDeviation" : {
+      "@id" : "https://w3id.org/enigma#hasAgeStandardDeviation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName"
+    },
+    "hasComorbidity" : {
+      "@id" : "https://w3id.org/enigma#hasComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasTE" : {
+      "@id" : "https://w3id.org/enigma#hasTE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasGrant" : {
+      "@id" : "https://w3id.org/enigma#hasGrant",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasVenue" : {
+      "@id" : "https://w3id.org/enigma#hasVenue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rationale" : {
+      "@id" : "https://w3id.org/enigma#rationale"
+    },
+    "Location" : {
+      "@id" : "https://w3id.org/enigma#Location"
+    },
+    "postal-code" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#postal-code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "orcidId" : {
+      "@id" : "http://vivoweb.org/ontology/core#orcidId",
+      "@type" : "@id"
+    },
+    "ClinicalPopulation" : {
+      "@id" : "https://w3id.org/enigma#ClinicalPopulation"
+    },
+    "hasProject" : {
+      "@id" : "https://w3id.org/enigma#hasProject",
+      "@type" : "@id"
+    },
+    "GeneticStudy" : {
+      "@id" : "https://w3id.org/enigma#GeneticStudy"
+    },
+    "Cancer" : {
+      "@id" : "https://w3id.org/enigma#Cancer"
+    },
+    "hasProjectStatus" : {
+      "@id" : "https://w3id.org/enigma#hasProjectStatus"
+    },
+    "NewCategory" : {
+      "@id" : "https://w3id.org/enigma#NewCategory",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFirstDegreeRelativeWithDisorder" : {
+      "@id" : "https://w3id.org/enigma#hasFirstDegreeRelativeWithDisorder",
+      "@type" : "@id"
+    },
+    "hasDegree" : {
+      "@id" : "https://w3id.org/enigma#hasDegree",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfUndisclosedGender" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfUndisclosedGender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "AcademicArticle" : {
+      "@id" : "http://purl.org/ontology/bibo/AcademicArticle"
+    },
+    "hasPercentMitochondrialGenotyping" : {
+      "@id" : "https://w3id.org/enigma#hasPercentMitochondrialGenotyping",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "usesScannerSoftware" : {
+      "@id" : "https://w3id.org/enigma#usesScannerSoftware",
+      "@type" : "@id"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "DataDownload" : {
+      "@id" : "http://schema.org/DataDownload"
+    },
+    "hasNumberOfTransgenderMtoF" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfTransgenderMtoF",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasMeanAge" : {
+      "@id" : "https://w3id.org/enigma#hasMeanAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasPercentPlasma" : {
+      "@id" : "https://w3id.org/enigma#hasPercentPlasma",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasCohort" : {
+      "@id" : "https://w3id.org/enigma#hasCohort",
+      "@type" : "@id"
+    },
+    "hasAcquisitionDirection" : {
+      "@id" : "https://w3id.org/enigma#hasAcquisitionDirection",
+      "@type" : "@id"
+    },
+    "hasNumberOftbfMRI" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOftbfMRI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "QualifiedAffiliation" : {
+      "@id" : "https://w3id.org/enigma#QualifiedAffiliation"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "BriefPsychiatricRatingScale" : {
+      "@id" : "https://w3id.org/enigma#BriefPsychiatricRatingScale"
+    },
+    "hasMainPrincipalInvestigator" : {
+      "@id" : "https://w3id.org/enigma#hasMainPrincipalInvestigator",
+      "@type" : "@id"
+    },
+    "College" : {
+      "@id" : "http://vivoweb.org/ontology/core#College"
+    },
+    "currentJobTitle" : {
+      "@id" : "https://w3id.org/enigma#currentJobTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasImageAcquisitionProtocol" : {
+      "@id" : "https://w3id.org/enigma#hasImageAcquisitionProtocol",
+      "@type" : "@id"
+    },
+    "Treatment" : {
+      "@id" : "https://w3id.org/enigma#Treatment"
+    },
+    "hasResearchInterest" : {
+      "@id" : "https://w3id.org/enigma#hasResearchInterest",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "fullName" : {
+      "@id" : "https://w3id.org/enigma#fullName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDataset" : {
+      "@id" : "https://w3id.org/enigma#hasDataset",
+      "@type" : "@id"
+    },
+    "NeurologicalDisorder" : {
+      "@id" : "https://w3id.org/enigma#NeurologicalDisorder"
+    },
+    "hasTargetDate" : {
+      "@id" : "https://w3id.org/enigma#hasTargetDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "AnxietyDisorder" : {
+      "@id" : "https://w3id.org/enigma#AnxietyDisorder"
+    },
+    "doesNotHavePersonalHistoryOf" : {
+      "@id" : "https://w3id.org/enigma#doesNotHavePersonalHistoryOf",
+      "@type" : "@id"
+    },
+    "hasType" : {
+      "@id" : "https://w3id.org/enigma#hasType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfTransgenderFtoM" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfTransgenderFtoM",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "MentalHealthDisorder" : {
+      "@id" : "https://w3id.org/enigma#MentalHealthDisorder"
+    },
+    "hasNumberOfT1w" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfT1w",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "givenName" : {
+      "@id" : "https://w3id.org/enigma#givenName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GeneticDisorder" : {
+      "@id" : "https://w3id.org/enigma#GeneticDisorder"
+    },
+    "contentUrl" : {
+      "@id" : "http://schema.org/contentUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name"
+    },
+    "hasDisorderDetails" : {
+      "@id" : "https://w3id.org/enigma#hasDisorderDetails",
+      "@type" : "@id"
+    },
+    "hasInvestigator" : {
+      "@id" : "https://w3id.org/enigma#hasInvestigator",
+      "@type" : "@id"
+    },
+    "hasFlipAngle" : {
+      "@id" : "https://w3id.org/enigma#hasFlipAngle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasProtocolRunner" : {
+      "@id" : "https://w3id.org/enigma#hasProtocolRunner",
+      "@type" : "@id"
+    },
+    "hasArticleStatus" : {
+      "@id" : "https://w3id.org/enigma#hasArticleStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GeneticAssociationProtocol" : {
+      "@id" : "https://w3id.org/enigma#GeneticAssociationProtocol"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasWorkingGroupChair" : {
+      "@id" : "https://w3id.org/enigma#hasWorkingGroupChair",
+      "@type" : "@id"
+    },
+    "hasResolution" : {
+      "@id" : "https://w3id.org/enigma#hasResolution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDiagnosisDisorder" : {
+      "@id" : "https://w3id.org/enigma#hasDiagnosisDisorder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTreatmentDetails" : {
+      "@id" : "https://w3id.org/enigma#hasTreatmentDetails",
+      "@type" : "@id"
+    },
+    "hasGenotypeImputationProtocol" : {
+      "@id" : "https://w3id.org/enigma#hasGenotypeImputationProtocol",
+      "@type" : "@id"
+    },
+    "hasNumberOfdMRI" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfdMRI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasNumberOfSlices" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfSlices",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasStudyDesign" : {
+      "@id" : "https://w3id.org/enigma#hasStudyDesign",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWorkingGroupMember" : {
+      "@id" : "https://w3id.org/enigma#hasWorkingGroupMember",
+      "@type" : "@id"
+    },
+    "hasDiagnosticGroup" : {
+      "@id" : "https://w3id.org/enigma#hasDiagnosticGroup",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "https://w3id.org/enigma#location",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WorkingGroup" : {
+      "@id" : "https://w3id.org/enigma#WorkingGroup"
+    },
+    "hasPersonalHistoryOf" : {
+      "@id" : "https://w3id.org/enigma#hasPersonalHistoryOf",
+      "@type" : "@id"
+    },
+    "hasStatus" : {
+      "@id" : "https://w3id.org/enigma#hasStatus"
+    },
+    "hasLastProjectLead" : {
+      "@id" : "https://w3id.org/enigma#hasLastProjectLead",
+      "@type" : "@id"
+    },
+    "doesNotUseTreatment" : {
+      "@id" : "https://w3id.org/enigma#doesNotUseTreatment",
+      "@type" : "@id"
+    },
+    "AcquisitionDirection" : {
+      "@id" : "https://w3id.org/enigma#AcquisitionDirection"
+    },
+    "withMinDurationOfDisorder" : {
+      "@id" : "https://w3id.org/enigma#withMinDurationOfDisorder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "usesProtocol" : {
+      "@id" : "https://w3id.org/enigma#usesProtocol",
+      "@type" : "@id"
+    },
+    "AcquisitionProtocol" : {
+      "@id" : "https://w3id.org/enigma#AcquisitionProtocol"
+    },
+    "Cohort" : {
+      "@id" : "https://w3id.org/enigma#Cohort"
+    },
+    "hasProjectLead" : {
+      "@id" : "https://w3id.org/enigma#hasProjectLead",
+      "@type" : "@id"
+    },
+    "shortName" : {
+      "@id" : "https://w3id.org/enigma#shortName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasGeneReferencePanel" : {
+      "@id" : "https://w3id.org/enigma#hasGeneReferencePanel",
+      "@type" : "@id"
+    },
+    "hasPopulationGroup" : {
+      "@id" : "https://w3id.org/enigma#hasPopulationGroup",
+      "@type" : "@id"
+    },
+    "ProjectCohort" : {
+      "@id" : "https://w3id.org/enigma#ProjectCohort"
+    },
+    "doesNotHaveFamilyHistoryOf" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveFamilyHistoryOf",
+      "@type" : "@id"
+    },
+    "hasGeneticAssociationProtocol" : {
+      "@id" : "https://w3id.org/enigma#hasGeneticAssociationProtocol",
+      "@type" : "@id"
+    },
+    "region" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#region",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "hasFieldStrength" : {
+      "@id" : "https://w3id.org/enigma#hasFieldStrength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Protocol" : {
+      "@id" : "https://w3id.org/enigma#Protocol"
+    },
+    "doesNotHaveContraindicationToMRI" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveContraindicationToMRI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasDesigner" : {
+      "@id" : "https://w3id.org/enigma#hasDesigner",
+      "@type" : "@id"
+    },
+    "usesGenotypePlatform" : {
+      "@id" : "https://w3id.org/enigma#usesGenotypePlatform",
+      "@type" : "@id"
+    },
+    "SpecificMedicalRatingInfo" : {
+      "@id" : "https://w3id.org/enigma#SpecificMedicalRatingInfo"
+    },
+    "GenotypePlatform" : {
+      "@id" : "https://w3id.org/enigma#GenotypePlatform"
+    },
+    "hasPercentWholeGenomeSequencing" : {
+      "@id" : "https://w3id.org/enigma#hasPercentWholeGenomeSequencing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasOutputFeature" : {
+      "@id" : "https://w3id.org/enigma#hasOutputFeature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasOrcidId" : {
+      "@id" : "https://w3id.org/enigma#hasOrcidId",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasPercentExomeSequencing" : {
+      "@id" : "https://w3id.org/enigma#hasPercentExomeSequencing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasDiagnosisInstrument" : {
+      "@id" : "https://w3id.org/enigma#hasDiagnosisInstrument",
+      "@type" : "@id"
+    },
+    "hasQualifiedAffiliation" : {
+      "@id" : "https://w3id.org/enigma#hasQualifiedAffiliation",
+      "@type" : "@id"
+    },
+    "ranProtocol" : {
+      "@id" : "https://w3id.org/enigma#ranProtocol",
+      "@type" : "@id"
+    },
+    "fulfillsDiagnosticCriteria" : {
+      "@id" : "https://w3id.org/enigma#fulfillsDiagnosticCriteria",
+      "@type" : "@id"
+    },
+    "hasNeurologicalComorbidity" : {
+      "@id" : "https://w3id.org/enigma#hasNeurologicalComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "withMaxNumber" : {
+      "@id" : "https://w3id.org/enigma#withMaxNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasAffiliate" : {
+      "@id" : "https://w3id.org/enigma#hasAffiliate",
+      "@type" : "@id"
+    },
+    "hasDataCollector" : {
+      "@id" : "https://w3id.org/enigma#hasDataCollector",
+      "@type" : "@id"
+    },
+    "locality" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#locality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SignificantGeneralMedicalCondition" : {
+      "@id" : "https://w3id.org/enigma#SignificantGeneralMedicalCondition"
+    },
+    "hasNumberOfParticipants" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfParticipants",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasImagingDataCollector" : {
+      "@id" : "https://w3id.org/enigma#hasImagingDataCollector",
+      "@type" : "@id"
+    },
+    "doesNotHaveComorbidity" : {
+      "@id" : "https://w3id.org/enigma#doesNotHaveComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "kind" : {
+      "@id" : "https://w3id.org/enigma#kind",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Project" : {
+      "@id" : "https://w3id.org/enigma#Project"
+    },
+    "GeneticDataType" : {
+      "@id" : "https://w3id.org/enigma#GeneticDataType"
+    },
+    "hasCategory" : {
+      "@id" : "https://w3id.org/enigma#hasCategory",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPercentSelectLoci" : {
+      "@id" : "https://w3id.org/enigma#hasPercentSelectLoci",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasGeneticDataAnalyst" : {
+      "@id" : "https://w3id.org/enigma#hasGeneticDataAnalyst",
+      "@type" : "@id"
+    },
+    "OrganicMedicalDisorder" : {
+      "@id" : "https://w3id.org/enigma#OrganicMedicalDisorder"
+    },
+    "hasMaxIQ" : {
+      "@id" : "https://w3id.org/enigma#hasMaxIQ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasPercentGenomewideGenotyping" : {
+      "@id" : "https://w3id.org/enigma#hasPercentGenomewideGenotyping",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "didNotHaveFirstEpisodeOf" : {
+      "@id" : "https://w3id.org/enigma#didNotHaveFirstEpisodeOf",
+      "@type" : "@id"
+    },
+    "includesMale" : {
+      "@id" : "https://w3id.org/enigma#includesMale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasContact" : {
+      "@id" : "https://w3id.org/enigma#hasContact",
+      "@type" : "@id"
+    },
+    "hasMinIQ" : {
+      "@id" : "https://w3id.org/enigma#hasMinIQ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasFundingSource" : {
+      "@id" : "https://w3id.org/enigma#hasFundingSource",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasVoxelSize" : {
+      "@id" : "https://w3id.org/enigma#hasVoxelSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DiagnosisInstrument" : {
+      "@id" : "https://w3id.org/enigma#DiagnosisInstrument"
+    },
+    "MoodDisorder" : {
+      "@id" : "https://w3id.org/enigma#MoodDisorder"
+    },
+    "Hospital" : {
+      "@id" : "http://vivoweb.org/ontology/core#Hospital"
+    },
+    "withMinAgeOfOnsetOfDisorder" : {
+      "@id" : "https://w3id.org/enigma#withMinAgeOfOnsetOfDisorder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "CerebrovascularDisorder" : {
+      "@id" : "https://w3id.org/enigma#CerebrovascularDisorder"
+    },
+    "HealthyVariation" : {
+      "@id" : "https://w3id.org/enigma#HealthyVariation"
+    },
+    "withMinNumber" : {
+      "@id" : "https://w3id.org/enigma#withMinNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasLink" : {
+      "@id" : "https://w3id.org/enigma#hasLink",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Scanner" : {
+      "@id" : "https://w3id.org/enigma#Scanner"
+    },
+    "hasPrincipalInvestigator" : {
+      "@id" : "https://w3id.org/enigma#hasPrincipalInvestigator",
+      "@type" : "@id"
+    },
+    "hasTR" : {
+      "@id" : "https://w3id.org/enigma#hasTR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasSexDeterminedGenetically" : {
+      "@id" : "https://w3id.org/enigma#hasSexDeterminedGenetically",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "RespiratoryDisorder" : {
+      "@id" : "https://w3id.org/enigma#RespiratoryDisorder"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "hasDataType" : {
+      "@id" : "https://w3id.org/enigma#hasDataType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasReviewer" : {
+      "@id" : "https://w3id.org/enigma#hasReviewer",
+      "@type" : "@id"
+    },
+    "hasFirstEpisodeOf" : {
+      "@id" : "https://w3id.org/enigma#hasFirstEpisodeOf",
+      "@type" : "@id"
+    },
+    "VascularDisorder" : {
+      "@id" : "https://w3id.org/enigma#VascularDisorder"
+    },
+    "SpecificDisorderInfo" : {
+      "@id" : "https://w3id.org/enigma#SpecificDisorderInfo"
+    },
+    "hasCollectionSite" : {
+      "@id" : "https://w3id.org/enigma#hasCollectionSite",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "City" : {
+      "@id" : "https://w3id.org/enigma#City"
+    },
+    "hasDataAcquisitionMatrix" : {
+      "@id" : "https://w3id.org/enigma#hasDataAcquisitionMatrix",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasGeneticDataType" : {
+      "@id" : "https://w3id.org/enigma#hasGeneticDataType",
+      "@type" : "@id"
+    },
+    "Condition" : {
+      "@id" : "https://w3id.org/enigma#Condition"
+    },
+    "hasDataCollectionPeriodEnd" : {
+      "@id" : "https://w3id.org/enigma#hasDataCollectionPeriodEnd",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "Disorder" : {
+      "@id" : "https://w3id.org/enigma#Disorder"
+    },
+    "forOrganization" : {
+      "@id" : "https://w3id.org/enigma#forOrganization",
+      "@type" : "@id"
+    },
+    "hasPregnantMembers" : {
+      "@id" : "https://w3id.org/enigma#hasPregnantMembers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isProficientInLocalLanguage" : {
+      "@id" : "https://w3id.org/enigma#isProficientInLocalLanguage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasStatistics" : {
+      "@id" : "https://w3id.org/enigma#hasStatistics",
+      "@type" : "@id"
+    },
+    "hasHomePage" : {
+      "@id" : "https://w3id.org/enigma#hasHomePage",
+      "@type" : "@id"
+    },
+    "withMaxAgeOfOnsetOfDisorder" : {
+      "@id" : "https://w3id.org/enigma#withMaxAgeOfOnsetOfDisorder",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasNumberOfEchoes" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfEchoes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "isScannerModel" : {
+      "@id" : "https://w3id.org/enigma#isScannerModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEthnicGroup" : {
+      "@id" : "https://w3id.org/enigma#hasEthnicGroup"
+    },
+    "DiagnosticCriteria" : {
+      "@id" : "https://w3id.org/enigma#DiagnosticCriteria"
+    },
+    "hasImagingDataAnalyst" : {
+      "@id" : "https://w3id.org/enigma#hasImagingDataAnalyst",
+      "@type" : "@id"
+    },
+    "forPublication" : {
+      "@id" : "https://w3id.org/enigma#forPublication",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasNumberOfEEG" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfEEG",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "CohortGroup" : {
+      "@id" : "https://w3id.org/enigma#CohortGroup"
+    },
+    "BrainScanDataType" : {
+      "@id" : "https://w3id.org/enigma#BrainScanDataType"
+    },
+    "hasBrainStructuralData" : {
+      "@id" : "https://w3id.org/enigma#hasBrainStructuralData",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SpecificConditionInfo" : {
+      "@id" : "https://w3id.org/enigma#SpecificConditionInfo"
+    },
+    "hasAdditionalDemographic" : {
+      "@id" : "https://w3id.org/enigma#hasAdditionalDemographic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasConflictOfInterest" : {
+      "@id" : "https://w3id.org/enigma#hasConflictOfInterest",
+      "@type" : "@id"
+    },
+    "isPublic" : {
+      "@id" : "https://w3id.org/enigma#isPublic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "hasDataAnalyst" : {
+      "@id" : "https://w3id.org/enigma#hasDataAnalyst",
+      "@type" : "@id"
+    },
+    "InfectiousDisorder" : {
+      "@id" : "https://w3id.org/enigma#InfectiousDisorder"
+    },
+    "firstDraftContributor" : {
+      "@id" : "https://w3id.org/enigma#firstDraftContributor",
+      "@type" : "@id"
+    },
+    "excludesRightHands" : {
+      "@id" : "https://w3id.org/enigma#excludesRightHands",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "doesNotHavePsychiatricComorbidity" : {
+      "@id" : "https://w3id.org/enigma#doesNotHavePsychiatricComorbidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasPercentDNAExtractionNoGenotyping" : {
+      "@id" : "https://w3id.org/enigma#hasPercentDNAExtractionNoGenotyping",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "YoungManiaRatingScale" : {
+      "@id" : "https://w3id.org/enigma#YoungManiaRatingScale"
+    },
+    "hasHandedness" : {
+      "@id" : "https://w3id.org/enigma#hasHandedness",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPercentEpigeneticsSaliva" : {
+      "@id" : "https://w3id.org/enigma#hasPercentEpigeneticsSaliva",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasNumberOfSWI" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfSWI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasNumberOfFemale" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfFemale",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasNumberOfT2" : {
+      "@id" : "https://w3id.org/enigma#hasNumberOfT2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasFamilyHistoryOf" : {
+      "@id" : "https://w3id.org/enigma#hasFamilyHistoryOf",
+      "@type" : "@id"
+    },
+    "hasPercentEpigeneticsBlood" : {
+      "@id" : "https://w3id.org/enigma#hasPercentEpigeneticsBlood",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "street-address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "usedHeadCoil" : {
+      "@id" : "https://w3id.org/enigma#usedHeadCoil",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasFamilialRelations" : {
+      "@id" : "https://w3id.org/enigma#hasFamilialRelations"
+    },
+    "hasSubmittedPaper" : {
+      "@id" : "https://w3id.org/enigma#hasSubmittedPaper",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDescription" : {
+      "@id" : "https://w3id.org/enigma#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "country-name" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#country-name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isScannerOf" : {
+      "@id" : "https://w3id.org/enigma#isScannerOf",
+      "@type" : "@id"
+    },
+    "usesTreatment" : {
+      "@id" : "https://w3id.org/enigma#usesTreatment",
+      "@type" : "@id"
+    },
+    "isAcquisitionProtocolOf" : {
+      "@id" : "https://w3id.org/enigma#isAcquisitionProtocolOf",
+      "@type" : "@id"
+    },
+    "hasLongitudinalTimepoint" : {
+      "@id" : "https://w3id.org/enigma#hasLongitudinalTimepoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasSpecies" : {
+      "@id" : "https://w3id.org/enigma#hasSpecies",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSliceThickness" : {
+      "@id" : "https://w3id.org/enigma#hasSliceThickness",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasGeneticDataCollector" : {
+      "@id" : "https://w3id.org/enigma#hasGeneticDataCollector",
+      "@type" : "@id"
+    },
+    "GenotypeImputationProtocol" : {
+      "@id" : "https://w3id.org/enigma#GenotypeImputationProtocol"
+    },
+    "hasStudyFeature" : {
+      "@id" : "https://w3id.org/enigma#hasStudyFeature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "forDataType" : {
+      "@id" : "https://w3id.org/enigma#forDataType",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "withDisorderSeverity" : {
+      "@id" : "https://w3id.org/enigma#withDisorderSeverity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasPublishedPaper" : {
+      "@id" : "https://w3id.org/enigma#hasPublishedPaper",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasStartDate" : {
+      "@id" : "https://w3id.org/enigma#hasStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasFoV" : {
+      "@id" : "https://w3id.org/enigma#hasFoV",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Methodology" : {
+      "@id" : "https://w3id.org/enigma#Methodology"
+    },
+    "GeneReferencePanel" : {
+      "@id" : "https://w3id.org/enigma#GeneReferencePanel"
+    },
+    "usesScanner" : {
+      "@id" : "https://w3id.org/enigma#usesScanner",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SubstanceDependence" : {
+      "@id" : "https://w3id.org/enigma#SubstanceDependence"
+    }
+  }
+}

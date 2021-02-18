@@ -1,7 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1501"
-node [shape = rectangle, color="orange"]; "ifc:IfcWindowPanelPositionEnum" ; /*classes style*/
-	"ifc:IfcWindowPanelProperties" -> "ifc:IfcWindowPanelPositionEnum" [ label = "ifc:PanelPosition_IfcWindowPanelProperties" ];
-
-}
