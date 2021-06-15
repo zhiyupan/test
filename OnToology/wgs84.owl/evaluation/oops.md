@@ -19,8 +19,8 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 
 
-#### P10. Missing disjointness <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
-*The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].*
+#### P11. Missing domain or range in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
+*Object and/or datatype properties without domain or range (or none of them) are included in the ontology.*
 
     
 
@@ -29,8 +29,8 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
     
 
-#### P11. Missing domain or range in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
-*Object and/or datatype properties without domain or range (or none of them) are included in the ontology.*
+#### P10. Missing disjointness <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/important.png" height="15px"> (1 cases detected).
+*The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].*
 
     
 
