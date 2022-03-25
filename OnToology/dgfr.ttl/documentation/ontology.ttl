@@ -22,68 +22,6 @@
 #    Annotation properties
 #################################################################
 
-###  http://colin.maudry.com/ontologies/dgfr#checksumType
-:checksumType rdf:type owl:AnnotationProperty ;
-              rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#checksumValue
-:checksumValue rdf:type owl:AnnotationProperty ;
-               rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#dataset
-:dataset rdf:type owl:AnnotationProperty ;
-         rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#datasets
-:datasets rdf:type owl:AnnotationProperty ;
-          rdfs:domain <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#distributions
-:distributions rdf:type owl:AnnotationProperty ;
-               rdfs:domain <http://www.w3.org/ns/dcat#Dataset> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#downloads
-:downloads rdf:type owl:AnnotationProperty ;
-           rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#featured
-:featured rdf:type owl:AnnotationProperty ;
-          rdfs:domain <http://www.w3.org/ns/dcat#Dataset> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#followers
-:followers rdf:type owl:AnnotationProperty ;
-           rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                       <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#format
-:format rdf:type owl:AnnotationProperty ;
-        rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#hasMadeReuses
-:hasMadeReuses rdf:type owl:AnnotationProperty ;
-               rdfs:domain <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#hits
-:hits rdf:type owl:AnnotationProperty ;
-      rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                  <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#issues
-:issues rdf:type owl:AnnotationProperty ;
-        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> .
-
-
 ###  http://colin.maudry.com/ontologies/dgfr#localUrl
 :localUrl rdfs:comment "L'URL à laquelle une réutilisation est référencée et décrite sur la plateforme."@fr ,
                        "The URL where a reuse is registered and described on the platform."@en ;
@@ -92,76 +30,6 @@
           rdf:type owl:AnnotationProperty ;
           rdfs:subPropertyOf <http://schema.org/url> ;
           rdfs:domain :Reuse .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#members
-:members rdf:type owl:AnnotationProperty ;
-         rdfs:domain <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#pointsValue
-:pointsValue rdf:type owl:AnnotationProperty ;
-             rdfs:domain rdf:Property .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#popularityPoints
-:popularityPoints rdf:type owl:AnnotationProperty ;
-                  rdfs:domain :Reuse ,
-                              <http://www.w3.org/ns/dcat#Dataset> ,
-                              <http://www.w3.org/ns/dcat#Distribution> ,
-                              <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#private
-:private rdf:type owl:AnnotationProperty ;
-         rdfs:domain <http://www.w3.org/ns/dcat#Dataset> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#publicService
-:publicService rdf:type owl:AnnotationProperty ;
-               rdfs:domain <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#reuses
-:reuses rdf:type owl:AnnotationProperty ;
-        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                    <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#slug
-:slug rdf:type owl:AnnotationProperty ;
-      rdfs:domain :Reuse ,
-                  <http://www.w3.org/ns/dcat#Dataset> ,
-                  <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#sumPopularityPoints
-:sumPopularityPoints rdf:type owl:AnnotationProperty ;
-                     rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                                 <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#type
-:type rdf:type owl:AnnotationProperty ;
-      rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#uniqueVisitors
-:uniqueVisitors rdf:type owl:AnnotationProperty ;
-                rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                            <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#views
-:views rdf:type owl:AnnotationProperty ;
-       rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                   <http://xmlns.com/foaf/0.1/Organization> .
-
-
-###  http://colin.maudry.com/ontologies/dgfr#visits
-:visits rdf:type owl:AnnotationProperty ;
-        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
-                    <http://xmlns.com/foaf/0.1/Organization> .
 
 
 ###  http://creativecommons.org/ns#license
@@ -209,12 +77,25 @@
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
 ###  http://colin.maudry.com/ontologies/dgfr#dataset
 :dataset rdf:type owl:ObjectProperty ;
-         rdfs:range <http://www.w3.org/ns/dcat#Dataset> .
+         rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+         rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+         rdfs:comment "A dataset in which this distribution is included."@en ,
+                      "Un jeu de données dans lequel cette ressource est incluse"@fr ;
+         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+         rdfs:label "Dataset" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#published
@@ -234,83 +115,165 @@
 
 ###  http://colin.maudry.com/ontologies/dgfr#checksumType
 :checksumType rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:string .
+              rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Le type de somme de contrôle de la ressource."@fr ,
+                           "The type of checksum of the resource."@en ;
+              rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+              rdfs:label "Checksum type" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#checksumValue
 :checksumValue rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:string .
+               rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+               rdfs:range xsd:string ;
+               rdfs:comment "La somme de contrôle de la ressource."@fr ,
+                            "The checksum of the resource."@en ;
+               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+               rdfs:label "Checksum value" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#datasets
 :datasets rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Reuse ;
-          rdfs:range xsd:integer .
+          rdfs:domain :Reuse ,
+                      <http://xmlns.com/foaf/0.1/Organization> ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Le nombre de jeux de données utilisés pour réaliser la réutilisation"@fr ,
+                       "The number of datasets published "@en ,
+                       "The number of datasets used to make the reuse"@en ;
+          rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+          rdfs:label "Datasets" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#distributions
 :distributions rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:integer .
+               rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Le nombre de distributions cotenues dans le jeu de données."@fr ,
+                            "The number of distributions that this dataset contains."@en ;
+               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+               rdfs:label "Distributions" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#downloads
 :downloads rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:integer .
+           rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "Le nombre de fois que la ressource a été téléchargée."@fr ,
+                        "The number of times the resource was downloaded."@en ;
+           rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+           rdfs:label "Downloads" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#featured
 :featured rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:boolean .
+          rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Defines whether the dataset is shown on the portal front page or not."@en ,
+                       "Détermine si le jeu de données est visible sur la page d'accueil du portail, ou non."@fr ;
+          rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+          rdfs:label "Featured" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#followers
 :followers rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:integer .
+           rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                       <http://xmlns.com/foaf/0.1/Organization> ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "Le nombre d'utilisateurs qui se sont abonnés pour être informés lorsque le jeu de données est mis à jour."@fr ,
+                        "The number of users who subscribed to be informed when the dataset is updated."@en ;
+           rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+           rdfs:label "Followers" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#format
 :format rdf:type owl:DatatypeProperty ;
-        rdfs:range xsd:string .
+        rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Defines the format of a resource/dcat:Distribution. Used until proper resources of type dct:MediaTypeOrExtent are found."@en ,
+                     "Détermine le format d'une ressource/dcat:Distribution. Propriété utilisée jusqu'à ce que l'on trouve des ressources de type dct:MediaTypeOrExtent."@fr ;
+        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+        rdfs:label "Format" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#hasMadeReuses
 :hasMadeReuses rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:integer .
+               rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Le nombre de réutilisations produites et publiées par cette organisation"@fr ,
+                            "The number of reuses produced and published by this organization"@en ;
+               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+               rdfs:label "Has made reuses" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#hits
 :hits rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:integer .
+      rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                  <http://xmlns.com/foaf/0.1/Organization> ;
+      rdfs:range xsd:integer ;
+      rdfs:comment "Le nombre de fois que la page du jeu de données a été vue. Mais différent des views."@fr ,
+                   "The number of times the page of the dataset bas been viewed. But different from views."@en ;
+      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+      rdfs:label "Hits" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#issues
 :issues rdf:type owl:DatatypeProperty ;
-        rdfs:range xsd:integer .
+        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Le nombre d'anomalies qui ont été signalées pour le jeu de données (données erronées ou manquantes)."@fr ,
+                     "The number of issues that have been reported about the dataset (wrong or missing data)."@en ;
+        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+        rdfs:label "Issues" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#members
 :members rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:integer .
+         rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+         rdfs:range xsd:integer ;
+         rdfs:comment "Le nombre de personne qui sont membres de cette organisation"@fr ,
+                      "The number of people that are members of this organization"@en ;
+         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+         rdfs:label "Members" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#pointsValue
 :pointsValue rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:integer .
+             rdfs:domain rdf:Property ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "The value in points that each unit is worth" ;
+             rdfs:label "Points value" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#popularityPoints
 :popularityPoints rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:integer .
+                  rdfs:domain :Reuse ,
+                              <http://www.w3.org/ns/dcat#Dataset> ,
+                              <http://www.w3.org/ns/dcat#Distribution> ,
+                              <http://xmlns.com/foaf/0.1/Organization> ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "For a given object, the number of points related to popularity (downloads, followers)"@en ;
+                  rdfs:label "Popularity points" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#private
 :private rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:boolean .
+         rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Defines whether the dataset is private (not public) or not."@en ,
+                      "Détermine si le jeu de données est privé (non public) ou non."@fr ;
+         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+         rdfs:label "Private" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#publicService
 :publicService rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:boolean .
+               rdfs:domain <http://xmlns.com/foaf/0.1/Organization> ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Defines whether the organization is entrusted a mission of public service."@en ,
+                            "Détermine si l'organisation est chargée d'une mission de service publique, ou non."@fr ;
+               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+               rdfs:label "Public service" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#published
@@ -320,37 +283,77 @@
 
 ###  http://colin.maudry.com/ontologies/dgfr#reuses
 :reuses rdf:type owl:DatatypeProperty ;
-        rdfs:range xsd:integer .
+        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                    <http://xmlns.com/foaf/0.1/Organization> ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Le nombre de réutilisations qui ont été créées à partir des données du jeu de données et publiés sur la même page. Pour une organisation, le nombre de réutilisations créées à partir de ses jeux de données."@fr ,
+                     "The number of reuses that have been created from the data of the dataset and published on the same page. For an organization, the number of reuses created using its datasets."@en ;
+        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+        rdfs:label "Reuses" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#slug
 :slug rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:string .
+      rdfs:domain :Reuse ,
+                  <http://www.w3.org/ns/dcat#Dataset> ,
+                  <http://xmlns.com/foaf/0.1/Organization> ;
+      rdfs:range xsd:string ;
+      rdfs:comment "A URL-friendly version of the title."@en ,
+                   "Une version du titre simplifiée pour pouvoir être inséré dans une URL."@fr ;
+      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+      rdfs:label "Slug" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#sumPopularityPoints
 :sumPopularityPoints rdf:type owl:DatatypeProperty ;
-                     rdfs:range xsd:integer .
+                     rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                                 <http://xmlns.com/foaf/0.1/Organization> ;
+                     rdfs:range xsd:integer ;
+                     rdfs:comment "For a given object, the sum of the points calculated at its level plus the points calculated at the level of dependant objects. For instance, a datasets holds the sum of points at its level and at the level of the related distributions."@en ;
+                     rdfs:label "Sum of popularity points" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#type
 :type rdf:type owl:DatatypeProperty ;
-      rdfs:range xsd:string .
+      rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Le type de ressource (fichier, fichier distant, API, etc.)"@fr ,
+                   "The type of resource (file, remote file, API, etc.)"@en ;
+      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+      rdfs:label "Type" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#uniqueVisitors
 :uniqueVisitors rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:integer .
+                rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                            <http://xmlns.com/foaf/0.1/Organization> ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "Le nombre de visiteurs uniques qui se sont rendus sur la page du jeu de données."@fr ,
+                             "The number of unique visitors who viewed the page of the dataset."@en ;
+                rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+                rdfs:label "Unique visitors" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#views
 :views rdf:type owl:DatatypeProperty ;
-       rdfs:range xsd:integer .
+       rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                   <http://xmlns.com/foaf/0.1/Organization> ;
+       rdfs:range xsd:integer ;
+       rdfs:comment "Le nombre de fois que la page du jeu de données a été vue."@fr ,
+                    "The number of times the page of the dataset bas been viewed."@en ;
+       rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+       rdfs:label "Views" .
 
 
 ###  http://colin.maudry.com/ontologies/dgfr#visits
 :visits rdf:type owl:DatatypeProperty ;
-        rdfs:range xsd:integer .
+        rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ,
+                    <http://xmlns.com/foaf/0.1/Organization> ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "Le nombre de fois que la page du jeu de données a été visitée."@fr ,
+                     "The number of times the page of the dataset bas been visited."@en ;
+        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
+        rdfs:label "Visits" .
 
 
 #################################################################
@@ -366,6 +369,14 @@
        rdfs:label "Reuse" .
 
 
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+rdf:Property rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class .
+
+
 ###  http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
 
@@ -374,108 +385,13 @@
 <http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
 #################################################################
 #    Annotations
 #################################################################
-
-:checksumType rdfs:comment "Le type de somme de contrôle de la ressource."@fr ,
-                           "The type of checksum of the resource."@en ;
-              rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-              rdfs:label "Checksum type" .
-
-
-:checksumValue rdfs:comment "La somme de contrôle de la ressource."@fr ,
-                            "The checksum of the resource."@en ;
-               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-               rdfs:label "Checksum value" .
-
-
-:dataset rdfs:comment "A dataset in which this distribution is included."@en ,
-                      "Un jeu de données dans lequel cette ressource est incluse"@fr ;
-         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-         rdfs:label "Dataset" .
-
-
-:datasets rdfs:comment "Le nombre de jeux de données utilisés pour réaliser la réutilisation"@fr ,
-                       "The number of datasets published "@en ,
-                       "The number of datasets used to make the reuse"@en ;
-          rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-          rdfs:label "Datasets" .
-
-
-:distributions rdfs:comment "Le nombre de distributions cotenues dans le jeu de données."@fr ,
-                            "The number of distributions that this dataset contains."@en ;
-               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-               rdfs:label "Distributions" .
-
-
-:downloads rdfs:comment "Le nombre de fois que la ressource a été téléchargée."@fr ,
-                        "The number of times the resource was downloaded."@en ;
-           rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-           rdfs:label "Downloads" .
-
-
-:featured rdfs:comment "Defines whether the dataset is shown on the portal front page or not."@en ,
-                       "Détermine si le jeu de données est visible sur la page d'accueil du portail, ou non."@fr ;
-          rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-          rdfs:label "Featured" .
-
-
-:followers rdfs:comment "Le nombre d'utilisateurs qui se sont abonnés pour être informés lorsque le jeu de données est mis à jour."@fr ,
-                        "The number of users who subscribed to be informed when the dataset is updated."@en ;
-           rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-           rdfs:label "Followers" .
-
-
-:format rdfs:comment "Defines the format of a resource/dcat:Distribution. Used until proper resources of type dct:MediaTypeOrExtent are found."@en ,
-                     "Détermine le format d'une ressource/dcat:Distribution. Propriété utilisée jusqu'à ce que l'on trouve des ressources de type dct:MediaTypeOrExtent."@fr ;
-        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-        rdfs:label "Format" .
-
-
-:hasMadeReuses rdfs:comment "Le nombre de réutilisations produites et publiées par cette organisation"@fr ,
-                            "The number of reuses produced and published by this organization"@en ;
-               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-               rdfs:label "Has made reuses" .
-
-
-:hits rdfs:comment "Le nombre de fois que la page du jeu de données a été vue. Mais différent des views."@fr ,
-                   "The number of times the page of the dataset bas been viewed. But different from views."@en ;
-      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-      rdfs:label "Hits" .
-
-
-:issues rdfs:comment "Le nombre d'anomalies qui ont été signalées pour le jeu de données (données erronées ou manquantes)."@fr ,
-                     "The number of issues that have been reported about the dataset (wrong or missing data)."@en ;
-        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-        rdfs:label "Issues" .
-
-
-:members rdfs:comment "Le nombre de personne qui sont membres de cette organisation"@fr ,
-                      "The number of people that are members of this organization"@en ;
-         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-         rdfs:label "Members" .
-
-
-:pointsValue rdfs:comment "The value in points that each unit is worth" ;
-             rdfs:label "Points value" .
-
-
-:popularityPoints rdfs:comment "For a given object, the number of points related to popularity (downloads, followers)"@en ;
-                  rdfs:label "Popularity points" .
-
-
-:private rdfs:comment "Defines whether the dataset is private (not public) or not."@en ,
-                      "Détermine si le jeu de données est privé (non public) ou non."@fr ;
-         rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-         rdfs:label "Private" .
-
-
-:publicService rdfs:comment "Defines whether the organization is entrusted a mission of public service."@en ,
-                            "Détermine si l'organisation est chargée d'une mission de service publique, ou non."@fr ;
-               rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-               rdfs:label "Public service" .
-
 
 :published rdfs:comment "A resource that was published by the agent (person or organization)."@en ,
                         "Une entité publiée par un agent (personne ou organisation)"@fr ;
@@ -483,48 +399,8 @@
            rdfs:label "Published" .
 
 
-:reuses rdfs:comment "Le nombre de réutilisations qui ont été créées à partir des données du jeu de données et publiés sur la même page. Pour une organisation, le nombre de réutilisations créées à partir de ses jeux de données."@fr ,
-                     "The number of reuses that have been created from the data of the dataset and published on the same page. For an organization, the number of reuses created using its datasets."@en ;
-        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-        rdfs:label "Reuses" .
-
-
-:slug rdfs:comment "A URL-friendly version of the title."@en ,
-                   "Une version du titre simplifiée pour pouvoir être inséré dans une URL."@fr ;
-      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-      rdfs:label "Slug" .
-
-
-:sumPopularityPoints rdfs:comment "For a given object, the sum of the points calculated at its level plus the points calculated at the level of dependant objects. For instance, a datasets holds the sum of points at its level and at the level of the related distributions."@en ;
-                     rdfs:label "Sum of popularity points" .
-
-
-:type rdfs:comment "Le type de ressource (fichier, fichier distant, API, etc.)"@fr ,
-                   "The type of resource (file, remote file, API, etc.)"@en ;
-      rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-      rdfs:label "Type" .
-
-
-:uniqueVisitors rdfs:comment "Le nombre de visiteurs uniques qui se sont rendus sur la page du jeu de données."@fr ,
-                             "The number of unique visitors who viewed the page of the dataset."@en ;
-                rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-                rdfs:label "Unique visitors" .
-
-
-:views rdfs:comment "Le nombre de fois que la page du jeu de données a été vue."@fr ,
-                    "The number of times the page of the dataset bas been viewed."@en ;
-       rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-       rdfs:label "Views" .
-
-
-:visits rdfs:comment "Le nombre de fois que la page du jeu de données a été visitée."@fr ,
-                     "The number of times the page of the dataset bas been visited."@en ;
-        rdfs:isDefinedBy <http://colin.maudry.com/ontologies/dgfr#> ;
-        rdfs:label "Visits" .
-
-
 <http://colin.maudry/rdf/colin-maudry#me> <http://xmlns.com/foaf/0.1/mbox> <mailto:colin@maudry.com> ;
                                           <http://xmlns.com/foaf/0.1/name> "Colin Maudry" .
 
 
-###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
